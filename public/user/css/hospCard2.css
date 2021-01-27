@@ -1,0 +1,119 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #000;
+}
+
+.Hospital-Card .card {
+  border-radius: 10px;
+ 
+}
+.cardcont{
+ /*padding-top: 10px;
+   padding-bottom: 5px;*/
+  /*background-color: red;*/
+  border-radius: 10px;
+}
+.cardrow{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  /*background-color: blue;*/
+  box-shadow: 5px 5px 10px #e8ecf0, -10px -10px 20px #e8ecf0;   /*de0e4  */
+}
+
+.Hospital-Card .card .card-header .profile_img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 10px solid #ccc;
+  /*border-radius: 50%;*/
+}
+
+.Hospital-Card .card h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Hospital-Card .card p {
+  font-size: 16px;
+  color: #000;
+}
+.nores h3{
+  color:rgba(13, 95, 95, 1);
+}
+/* Start Of Search Style */
+
+#search-section {
+/*  background-color: rgba(13, 95, 95, 0.5);
+  box-shadow: 30px 30px 100px 5px rgb(0, 2, 2) inset, -30px 0 100px 5px rgb(0, 2, 2) inset;*/
+    box-shadow: 5px 5px 10px #e8ecf0, -10px -10px 20px #e8ecf0;
+    border-radius: 10px;
+}
+
+/* #search-container {
+  border: 1.5px solid rgba(2, 26, 26, 1); 
+  box-shadow: 30px 30px 0 10px #333, 200px -50px 0 -10px #333; 
+   box-shadow: 0px 10px 50px 10px rgb(2, 26, 26) inset;
+} */
+
+#search-container div.col-lg, #search-container div.col-md-6 {
+  padding: 0;
+}
+
+#search-container .form-group {
+  margin: 0;
+}
+
+#search-container select {
+  border-radius: 0;
+}
+
+#search-container select option:hover {
+  background-color: rgba(13, 95, 95, 1);
+}
+#submitSearch {
+  background-color: #00171F;
+  color: rgba(13, 95, 95, 1);
+  border-color: rgba(13, 95, 95, 1);
+  border-radius: 5px;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin-left: auto;
+  margin-right: auto;
+}
+#submitSearch:hover {
+  background-color: rgba(13, 95, 95, 1);
+  color: #00171F;
+  border-color: #00171F;
+}
+#submitSearch:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 95, 95, 1);;
+
+}
+
+
+/* End Of Search Style */
+
+:root {
+    --star-size: 35px;
+    --star-color: rgb(223, 221, 221);
+    --star-background: #fc0;
+}
+
+.Stars {
+    --percent: calc(var(--ratingStars) / 5 * 100%);
+    display: inline-block;
+    font-size: var(--star-size);
+    /* font-family: Times; */
+    line-height: .5;
+}
+
+.Stars::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

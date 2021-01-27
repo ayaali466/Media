@@ -1,0 +1,193 @@
+.navcard a{
+    color: #354067;
+    letter-spacing:1px;
+    margin-left: 20px;
+}
+.navcard a:hover{
+    text-decoration: none;
+    color: red;
+}
+#nav { text-align: center; }
+ul{
+    text-align: center;
+}
+
+.card {
+    height: 330px;
+    margin: 1em;
+    perspective: 1500px;
+}
+
+.card .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+}
+
+.more {
+    display: none;
+}
+
+.more:hover ~ .content {
+    transform: rotateY(180deg);
+}
+.navcard .active a{
+    color: red;
+    border-bottom: 2px solid red !important;
+    padding-bottom: 14px;
+}
+.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 6px;
+}
+
+.front .inner, .back .inner {
+    height: 100%;
+    display: flex;
+    transform: translateZ(80px) scale(1);
+}
+
+.front {
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+
+    background-image: linear-gradient(to bottom,
+    rgba(255, 255, 255, 50),
+    rgba(255, 255, 255, 50)
+    100%);
+}
+
+.front:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 6px;
+    backface-visibility: hidden;
+}
+
+.front h2 {
+    grid-row: 2;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+    border: 2px solid #f0f0f0;
+}
+
+.back .info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #355cc9;
+    grid-row: 3;
+}
+
+.back .info:not(:first-of-type):before {
+    content: '';
+    position: absolute;
+    left: -0.9em;
+    height: 18px;
+    width: 1px;
+    background-color: #ccc;
+}
+
+.back .info span {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.back .info i {
+    font-size: 1.2em;
+}
+
+.back .info .icon {
+    margin-left: 0.3em;
+}
+
+.back .info .icon span {
+    display: block;
+    margin-top: -0.25em;
+    font-size: 0.8em;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.back .description {
+    width: 100% !important;
+    grid-column: -1;
+    font-size: 0.86em;
+    border-radius: 5px;
+    font-weight: 600;
+    line-height: 1.4em;
+    overflow: auto;
+    color: #355cc9;
+    padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #859ddf;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #355cc9;
+}
+.bio {
+    margin: 15px;
+    color: #354067;
+}
+.rate{
+    margin-top: 15px;
+    color: #354067;
+}
+.bio #bio_title
+{
+    color: #354067;
+}
+.bio #bio_description
+{
+    font-size:12px ;
+}
+
+
+
+.card label {
+    cursor: pointer;
+}
+.caption {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+.navcard a{
+    margin: 0px;
+}

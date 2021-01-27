@@ -1,0 +1,13 @@
+INSERT INTO hospitals (hos_name,hos_address,hos_phone)
+VALUES
+("Amal Specialized Hospital","67 Arafat Street, Al Reqaba Division, Hadaek Al Kuba","01141500087"),
+("Ein El Hayah Hospital","16 El Nasr St.، EL NOZHA EL GADIDA، El Nozha, Cairo Governorate","0226214024"),
+("Saudi German Hospital – Cairo"," Josef Teto street - Nozha, Heliopolis, Cairo.","16259"),
+("Ain Shams University Specialized Hospital"," El-Khalifa El-Maamoun, El-Qobba Bridge, Heliopolis, Cairo.","16096"),
+("Cleopatra Hospital","39 Cleopatra Street, Opposite Maidan Salahuddin Square، Almazah, Heliopolis, Cairo.","19668"),
+("Dar Al Fouad Hospital","26 July St., The Touristic Zone, 6th of October City, Giza, 12568, Egypt","16370"),
+("Alnas Hospital","6 Street 2, Shubra Al Kheimah, Shubra El Kheima 2, Al Qalyubia.","16441"),
+("Yasmeen Hospital","Algeria Street 10th Sector New Maadi, Maadi, Cairo.","01014111130"),
+("Andalusia Hospital","4G/6 Takseem Al Maadi - New، Maadi, Cairo.","16781");
+
+

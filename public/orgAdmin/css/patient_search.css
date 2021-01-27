@@ -1,0 +1,67 @@
+.patient_search_box {
+    width: 50%;
+    background-color: #DFDDDB;
+    padding: 1%;
+    margin: 0 auto;
+    padding: 15px 40px 15px 20px;
+    color: #f8f9fa;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    background: #31353D;
+    transition: width 0.4s ease;
+    outline: none;
+}
+
+.patient_search_box i {
+    vertical-align: middle;
+    width: 50px;
+}
+
+.patient_search_box input {
+    background-color: #31353D;
+    border-color: #DFDDDB;
+    border: none;
+    padding: 2%;
+    font-size: 1.3em;
+    width: 85%;
+    outline: none;
+    text-align: center;
+    color: #f8f9fa;
+    vertical-align: middle;
+}
+
+.patient_search_box input::placeholder {
+    text-align: center;
+    line-height: 100px;
+    color: #f8f9fa;
+}
+
+.patient_search_result_container .patient_search_result a {
+    font-size: 50px;
+    display: block;
+    margin-bottom: -15px;
+}
+
+.patient_search_result_container .patient_search_result a:hover {
+    text-decoration: none;
+}
+
+.patient_search_result_container .patient_search_result span {
+    display: block;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.patient_search_result {
+    border: 2px solid gray;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.patient_search_result:hover {
+    background-color: rgb(217, 231, 217);
+}

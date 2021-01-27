@@ -1,0 +1,26 @@
+  .custom-alert {
+    padding: 5px 10px;
+    margin: -.5rem 0 1rem 0;
+    display: none;
+  }
+  .asterisx-required {
+      margin-left: 0;
+      margin-top: 10px;
+      z-index: 5;
+      /* display: block; */
+  }
+
+
+  /* Password */
+.progress {
+    height: 5px;
+}
+.fa-file-alt {
+    color: #edda39;
+}
+.fa-times {
+    color: #dc3545;
+}
+.fa-check {
+    color: #28a745;
+}

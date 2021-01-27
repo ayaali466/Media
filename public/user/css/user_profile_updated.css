@@ -1,0 +1,122 @@
+.grid {
+    width: 100%;
+    /* background: rgb(245, 245, 245); */
+}
+
+.profile_sidebar {
+    background: rgb(231, 237, 240);
+    font-size: 1rem;
+    border-radius: 3px;
+    height: 100%;
+}
+
+.profile_sidebar_head {
+    padding: 2px 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.profile_sidebar_head h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.profile_sidebar_ul {
+    margin-top: 16px;
+    padding: 0 0 16px 0;
+    margin-bottom: 0;
+}
+
+.profile_sidebar_li:hover,
+.li_contain_ul:hover {
+    border-left: 4px solid var(--hove);
+    background: #03be4421;
+    /* box-shadow: rgba(50, 50, 93, 0.08) 0px 14px 13px -12px, rgba(0, 0, 0, 0.16) 0px 26px 32px -22px; */
+}
+
+.profile_sidebar_ul_li_a:hover,
+.li_contain_ul a:hover {
+    text-decoration: none;
+}
+
+.profile_sidebar_ul_li_a {
+    width: 100%;
+    /* display: inline-flex;
+    align-items: center; */
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 2.3rem;
+    color: #333;
+    /* text-decoration: none; */
+    padding: 13px 40px 13px 34px;
+    /* transition: right linear .3s; */
+}
+
+.profile_sidebar_ul_li_a i {
+    margin-right: 10px;
+}
+
+.profile_sidebar_ul_li_a:hover,
+.profile_sidebar_li_ul_li_child:hover {
+    /* right:-4px; */
+    color: var(--hove);
+}
+
+.profile_sidebar_li,
+.li_contain_ul {
+    list-style: none;
+    border-left: 4px solid transparent;
+    transition: .5s linear;
+    padding: 20px 0;
+}
+
+.showed {
+    background: #d2ffe221;
+    border-left: 4px solid var(--hove)!important;
+}
+
+.showed .profile_sidebar_ul_li_a {
+    color: var(--hove);
+    font-weight: bold;
+}
+
+
+/*  base.css*/
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --textColor: #333;
+    --hove: #0055d9;
+}
+
+.image-cover2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-shadow: 0 0 10px 10px solid rgba(128, 128, 128, 0.602);
+}
+
+#general_info,
+#medical_info,
+#edit_profile_logo,
+#edit_profile {
+    /* max-width: 95%; */
+}
+
+#medical_info,
+#edit_profile_logo,
+#edit_profile,
+#delete_profile {
+    display: none;
+}
+
+#medical_info li a:last-child {
+    color: #dc3545;
+}
+
+#medical_info a:last-child:hover {
+    color: #28a745;
+}
